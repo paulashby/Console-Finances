@@ -86,3 +86,60 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+// Mock for testing
+/*
+var finances = [
+    ['Jan-2010', 100], 
+    ['Feb-2010', 500], 
+    ['Mar-2010', 3000],
+    ['Apr-2010', 3000],
+    ['May-2010', 2000],
+    ['Jun-2010', 1000]
+];
+*/
+
+var totalMonths = finances.length;
+var totalProfit = 0;
+var previousProfit = 0;
+var currentProfit = 0;
+var currentChange = 0;
+var overallChange = 0;
+var averageChange = 0;
+var greatestIncrease = ["", 0];
+var greatestDecrease = ["", 0];
+
+// Use totalMonths var as optimisation
+for (var i = 0; i < totalMonths; i++) {
+
+    var currentMonth = finances[i];
+
+    currentProfit = currentMonth[1];
+    totalProfit += currentProfit;
+
+    // Don't count change from starting value of 0 - we don't know the value for December 2009
+    if (previousProfit) {
+        currentChange = currentProfit - previousProfit;
+    }
+
+    // We're tracking the overall CHANGE, so it's still a positive value 
+    // even if the actual profit is lower than previous month
+    overallChange += Math.abs(currentChange);
+
+    if (currentChange > greatestIncrease[1]) {
+        greatestIncrease = [currentMonth[0], currentChange];
+    }
+    else if (currentChange < greatestDecrease[1]) {
+        greatestDecrease = [currentMonth[0], currentChange];
+    }
+
+    previousProfit = currentProfit;
+    
+}
+console.log("Change: " + overallChange);
+// Limit average change to 2 decimal places
+averageChange = (overallChange / totalMonths).toFixed(2);
+
+var report = "Financial Analysis\n----------------------------\nTotal Months: " + totalMonths + "\nTotal: $" + totalProfit + "\nAverage Change: $" + averageChange + "\nGreatest Increase in Profits: " + greatestIncrease[0] + "($" + greatestIncrease[1] + ")\nGreatest Decrease in Profits: " + greatestDecrease[0] + "($" + greatestDecrease[1] + ")";
+
+console.log(report);
