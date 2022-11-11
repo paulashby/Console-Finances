@@ -136,7 +136,7 @@ for (var i = 0; i < totalMonths; i++) {
     previousProfit = currentProfit;
     
 }
-console.log("Change: " + overallChange);
+
 // Limit average change to 2 decimal places
 averageChange = (overallChange / totalMonths).toFixed(2);
 
