@@ -49,4 +49,4 @@ Thanks to [the Trilogy Skills Bootcamp in Front-End Web Development](https://ski
 ## License
 Licensed under the [MIT](https://github.com/paulashby/Bootstrap-Portfolio/blob/main/LICENSE.md) license.
 
-![Screenshot](images/screenshot.jpg)
+![Screenshot](./assets/images/screenshot.jpg)
