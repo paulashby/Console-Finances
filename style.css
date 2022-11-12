@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #22272e;
+    color: #acbac7;
+  }
+
+  main {
+    margin: 3rem;
+  }
+
+  h1 {
+    color: #fff;
+  }
+
+  .title-contextual {
+    color: #d8b130;
+  }
+
+  h1 + p {
+    font-size: 1.15rem;
+  }
+
+  p + p {
+    font-size: 0.85rem;
+  }
+
+  a {
+    color: #539bf5;
+  }
