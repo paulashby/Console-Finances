@@ -1,7 +1,13 @@
 # Console-Finances
 Exercise - analysing a set of financial records using JavaScript
 
-Set as part of [the Trilogy Skills Bootcamp in Front-End Web Development](https://skillsforlife.edx.org/coding/frontend/landing/?s=Google-Unbranded&pkw=web%20design%20training&pcrid=624628533241&pmt=p&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CSKILLS-FOR-LIFE%7CSEM%7CCODING%7C-%7COFL%7CTIER-1%7CALL%7CNBD-G%7CBMM%7CPrimary%7CSubject-Matter&utm_term=web%20design%20training&s=google&k=web%20design%20training&utm_adgroupid=140443158663&utm_locationphysicalms=1006886&utm_matchtype=p&utm_network=g&utm_device=c&utm_content=624628533241&utm_placement=&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmMdwBRSe3BLeaChkukN5Bbqb18220k1ku9TB2o9tzsX0xYUc-dlRWgaAuyvEALw_wcB&gclsrc=aw.ds). Students were provided with an index.html file and an index.js which was set up with a finances array containing the data to be processed. The task was to write JavaScript code that analyzes the records to calculate each of the following:
+![html 5](https://img.shields.io/badge/html-5-blue)
+![JavaScript ES5](https://img.shields.io/badge/javascript-ES5-yellow)
+![License MIT](https://img.shields.io/badge/license-MIT-green)
+
+Set as part of [the Trilogy Skills Bootcamp in Front-End Web Development](https://skillsforlife.edx.org/coding/frontend/landing/?s=Google-Unbranded&pkw=web%20design%20training&pcrid=624628533241&pmt=p&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CSKILLS-FOR-LIFE%7CSEM%7CCODING%7C-%7COFL%7CTIER-1%7CALL%7CNBD-G%7CBMM%7CPrimary%7CSubject-Matter&utm_term=web%20design%20training&s=google&k=web%20design%20training&utm_adgroupid=140443158663&utm_locationphysicalms=1006886&utm_matchtype=p&utm_network=g&utm_device=c&utm_content=624628533241&utm_placement=&gclid=Cj0KCQjwqc6aBhC4ARIsAN06NmMdwBRSe3BLeaChkukN5Bbqb18220k1ku9TB2o9tzsX0xYUc-dlRWgaAuyvEALw_wcB&gclsrc=aw.ds).
+
+Students were provided with an index.html file and an index.js which was set up with a finances array containing the data to be processed. The task was to write JavaScript code that analyzes the records, calculating each of the following:
 
 * The total number of months included in the dataset.
 
@@ -15,7 +21,7 @@ Set as part of [the Trilogy Skills Bootcamp in Front-End Web Development](https:
 
 * The greatest decrease in losses (date and amount) over the entire period.
 
-The ultimate goal was to log the analysis to the console, formatted to match the example output:
+The ultimate goal was to log the analysis to the console, formatted to match the following example output:
 
   ```text
   Financial Analysis
