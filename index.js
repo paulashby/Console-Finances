@@ -87,21 +87,8 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
-// Mock for testing
-/*
-var finances = [
-    ['Jan-2010', 100], 
-    ['Feb-2010', 500], 
-    ['Mar-2010', 3000],
-    ['Apr-2010', 3000],
-    ['May-2010', 2000],
-    ['Jun-2010', 1000]
-];
-*/
-
 var totalMonths = finances.length;
 var totalProfit = 0;
-var previousProfit = 0;
 var currentProfit = 0;
 var currentChange = 0;
 var overallChange = 0;
@@ -118,7 +105,8 @@ for (var i = 0; i < totalMonths; i++) {
     totalProfit += currentProfit;
 
     // Don't count change from starting value of 0 - we don't know the value for December 2009
-    if (previousProfit) {
+    if (i) {
+        var previousProfit = finances[i - 1][1];
         currentChange = currentProfit - previousProfit;
     }
 
@@ -132,8 +120,6 @@ for (var i = 0; i < totalMonths; i++) {
     else if (currentChange < greatestDecrease[1]) {
         greatestDecrease = [currentMonth[0], currentChange];
     }
-
-    previousProfit = currentProfit;
     
 }
 
